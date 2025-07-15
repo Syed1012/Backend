@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: ai_vms
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/aivms_db
+    username: aivms_user
+    password: aivms_pass
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: musaibkng853@gmail.com
+    password: mtyt xxjo vlij vjgx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            trust: smtp.gmail.com
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: false
+
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
+      port: 35729
