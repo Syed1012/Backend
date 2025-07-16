@@ -31,7 +31,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: syed1012/ai-vms-backend
+          images: syedmusaib01/ai-vms-backend
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
